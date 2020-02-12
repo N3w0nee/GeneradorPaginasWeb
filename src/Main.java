@@ -24,6 +24,8 @@ public class Main {
 			String titulo = scan1.nextLine();
 			System.out.println("Dame el h1");
 			String h1 = scan1.nextLine();
+			System.out.println("Dame el h2");
+			String h2 = scan1.nextLine();
 			System.out.println("Dame un parrafo");
 			String p = scan1.nextLine();
 			System.out.println("Que imagen quieres? 1. Perro 2.Gato 3. Gallina 4. Tiburon 5. Cangrejo");
@@ -34,6 +36,8 @@ public class Main {
 					+ "background-color:red;}</style>");
 			bw.newLine();
 			bw.write("<h1>" +  h1 + "</h1>");
+			bw.newLine();
+			bw.write("<h2>" +  h2 + "</h2>");
 			bw.newLine();
 			bw.write("<p>" +  p + "</p>");
 			bw.newLine();
@@ -51,10 +55,6 @@ public class Main {
 			}
 			if (img==4) {
 				bw.write("<img " + "src=\"https://www.nationalgeographic.com.es/medio/2018/02/27/tiburon__1280x720.jpg\""+  ">" + "</img>");
-				bw.newLine();
-			}
-			if (img==5) {
-				bw.write("<img " + "src=\"https://static.iris.net.co/semana/upload/images/2019/3/1/603344_1.jpg\""+  ">" + "</img>");
 				bw.newLine();
 			}
 			bw.write("</body>");
