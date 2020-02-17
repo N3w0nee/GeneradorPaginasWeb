@@ -10,6 +10,10 @@ public class Main {
 		// TODO Auto-generated method stub
 		String ruta = "pagina.html";
 		File fichero = new File(ruta);
+		System.out.println ("");
+		
+		System.out.println ("introduzca parrafo");
+		System.out.println ("introduzca titulo");
 		
 		try {
 			fichero.createNewFile();
@@ -67,5 +71,7 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
+	
+	
 
 }
